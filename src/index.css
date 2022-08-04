@@ -24,6 +24,11 @@ code {
   color: #f87171;
 }
 
+#root{
+  min-height: 100vh;
+  background-color: #0f172a;
+}
+
 .space-correct{
   display: inline-block;
   text-decoration:underline;

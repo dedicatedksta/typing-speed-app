@@ -4,7 +4,7 @@ import Card from "./Card";
 import Cards from "./Cards";
 
 const AppRoutes = () => {
-  return <div>
+  return <div className=" flex">
     <Routes>
       <Route path="/races" element={<Cards/>}/>
       <Route path="/races/:id" element={<Card/>}/>

@@ -45,7 +45,7 @@ const Card:FC= () => {
   },[])
 
   useEffect(()=>{
-    if (timer>0){
+    if (timer>0 && !won){
       setTimeout(()=>{
         setTimer(timer-1)
       },1000)
@@ -84,7 +84,7 @@ const Card:FC= () => {
 
   if (isLoading)return <Loader/>
 
-  return <div className=" max-w-3xl mx-auto text-xl border p-4 rounded-xl tracking-wide   bg-slate-800">
+  return <div className=" max-w-3xl mx-auto self-center text-xl border p-4 rounded-xl tracking-wide   bg-slate-800">
     <Navbar/>
     <input ref={inputRef} className="opacity-0 absolute top-0" disabled={won}  autoFocus type="text" value={value} onChange={handleChange} />
     <main>
