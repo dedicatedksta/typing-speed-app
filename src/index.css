@@ -24,6 +24,20 @@ code {
   color: #f87171;
 }
 
-.space{
+.space-correct{
+  display: inline-block;
   text-decoration:underline;
+  outline:1px solid;
+  background: #22c55e;
+  font-size: 14px;
+  width: 6px;
+}
+
+.space-incorrect{
+  display: inline-block;
+  text-decoration:underline;
+  outline:1px solid;
+  background: #f87171;
+  font-size: 14px;
+  width: 6px;
 }
